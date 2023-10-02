@@ -3,6 +3,8 @@
 ![Design preview for the Newsletter sign-up form with success message coding challenge](./design/desktop-preview.jpg)
 
 ![Design preview for the Newsletter sign-up form with success message coding challenge](./design/error-states.jpg)
+
+![Design preview for the Newsletter sign-up form with success message coding challenge](./design/desktop-success-active.jpg)
 ## Welcome! 👋
 
 Thanks for checking out this front-end coding challenge.
