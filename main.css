@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto';
+}
+
+.container {
+    width: 100%;
+    height: 100vb;
+    background-color: hsl(235, 18%, 26%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0px 0px 20px 6px #2a2a2a;
+    padding: 15px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+@media (max-width: 375px) {
+    section {
+        flex-direction: column-reverse;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+        padding: 0;
+    }
+}
+
+@media (min-width: 375.99px) {
+    section {
+        flex-direction: row;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        width: 100vb;
+    }
+}
+
+.right {
+    width: 350px;
+    padding: 20px 45px 20px 25px;
+}
+
+.right h1 {
+    font-size: 45px;
+    padding: 20px 0;
+}
+
+.right .f-p {
+    padding-bottom: 20px;
+    font-size: 11px;
+}
+
+ul {
+    list-style: none;
+    padding-bottom: 20px;
+}
+
+ul li {
+    font-size: 12px;
+    padding: 5px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form div {
+    display: flex;
+    justify-content: space-between;
+}
+
+form div p:first-child {
+    font-size: 10px;
+    padding: 5px 0;
+    color: hsl(234, 29%, 20%);
+    font-weight: bold;
+}
+
+form div p:last-child {
+    display: none;
+}
+
+form div p.error {
+    font-size: 10px;
+    padding: 5px 0;
+    color: hsl(4, 100%, 67%);
+    font-weight: bold;
+    display: block;
+}
+
+form input,
+form button {
+    height: 40px;
+    margin-bottom: 20px;
+    outline: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+form input {
+    padding-left: 10px;
+    border: 1px solid hsl(231, 7%, 60%);
+}
+
+form input::placeholder {
+    color: hsl(231, 7%, 60%);
+    font-size: 11px;
+}
+
+form input.error::placeholder {
+    color: hsl(4, 100%, 67%);
+}
+
+form input:focus {
+    border: 1px solid hsl(234, 29%, 20%);
+}
+
+form button {
+    background-color: hsl(234, 29%, 20%);
+    color: #fff;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+}
+
+form button:hover {
+    background-color: hsl(4, 100%, 67%);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    box-shadow: -1px 6px 20px 0px hsl(4deg 100% 70.77%);
+}
+
+.right svg {
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+}
+
+.left svg {
+    width: 335px;
+    height: 490px;
+}
+
+.success-message-container {
+    width: 330px;
+    display: none;
+}
+
+@media (max-width: 375px) {
+    .success-message-container {
+        width: 100%;
+        height: 100vb;
+    }
+
+    .success-message {
+        height: 100%;
+        justify-content: space-around;
+    }
+}
+
+.success-message {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.success-message-container svg {
+    width: 30px;
+    height: 30px;
+    background-color: hsl(4, 100%, 67%);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.success-message-container h2 {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 1;
+    padding: 15px 0;
+}
+
+.success-message-container p {
+    font-size: 10px;
+    padding-bottom: 20px;
+}
+
+.success-message-container button {
+    width: 100%;
+    height: 30px;
+    background-color: hsl(234, 29%, 20%);
+    color: #fff;
+    transition: .4s;
+    -webkit-transition: .4s;
+    -moz-transition: .4s;
+    -ms-transition: .4s;
+    -o-transition: .4s;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    font-size: 9px;
+    font-weight: bold;
+}
+
+.success-message-container button:hover {
+    background-color: hsl(4, 100%, 67%);
+    box-shadow: -1px 6px 20px 0px hsl(4deg 100% 70.77%);
+}
+
+.success-message-container.display {
+    display: block;
+}
